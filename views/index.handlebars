@@ -1,0 +1,12 @@
+<h1 class="text-center mb-3">{{title}}</h1>
+<form action="/gpt3" method="POST" class="mb-4">
+  <div class="form-group">
+    <label for="name">Content Idea</label>
+    <input type="text" name="querystring" class="form-control">
+  </div>
+  <input type="submit" value="Generate" class="btn btn-primary btn-block">
+</form>
+<h4>Generated Content</h4>
+<h2 class="list-group">
+  {{generatedContent}}
+</h2>
